@@ -14,7 +14,7 @@ const Formulario = ({setAddTarea,addTarea,newTarea,DeletFunction}) => {
     <form onSubmit={(e)=>newTarea(e)}>
             <input placeholder='Ingresar tarea' onChange={(evento)=>handleInputTarea(evento)} value={addTarea}/>
             <button className='btn btn-secondary' type='submit'><AiFillFolderAdd /></button>
-            <button className='btn btn-secondary' onClick={DeletFunction} ><BsTrash/></button>
+            <button className='btn btn-secondary' onClick={DeletFunction} type="button" ><BsTrash/></button>
             
     </form>
   )
